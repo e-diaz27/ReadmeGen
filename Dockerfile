@@ -8,6 +8,6 @@ RUN npm install inquirer fs path
 
 COPY .  .
 
-ENV PORT=8080
+ENV NODE_PATH=/usr/local/lib/node_modules
 
 CMD ["npm", "start"]
